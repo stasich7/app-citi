@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Megafon</title>
+		<meta name="description" content="">
+		<!-- viewport settings -->
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi" />
+		<!-- apple touch icons -->
+		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144.png" />
+		<link rel="stylesheet" href="stylesheets/lib/normalize.min.css">
+		<link rel="stylesheet" href="stylesheets/application.css">
+		<!-- custom build for html5shiv -->
+		<script src="javascripts/lib/modernizr.min.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<!-- header -->
+			<header>
+				<div class="container">
+					<!-- menu for small devices -->
+					<nav class="mobile">
+						<ul>
+							<li>
+								<a class="root" href="/"></a>
+							</li>
+							<li>
+								<a class="menu" href="#"></a>
+							</li>
+							<li>
+								<a class="search" href="/search"></a>
+							</li>
+						</ul>
+					</nav>
+					<!-- main menu -->
+					<nav class="main-nav">
+						<ul>
+							<li>
+								<a href="#">Тарифы и опции</a>
+							</li>
+							<li>
+								<a href="#">Услуги</a>
+							</li>
+							<li>
+								<a href="#">Акции</a>
+							</li>
+							<li>
+								<a href="#">Интернет</a>
+							</li>
+							<li>
+								<a href="#">Оплата</a>
+							</li>
+							<li>
+								<a href="#">Роуминг</a>
+							</li>
+							<li>
+								<a href="#">Интернет-магазин</a>
+							</li>
+							<li>
+								<a href="#">Помощь</a>
+							</li>
+							<li>
+								<a class="active" href="#">Личный кабинет</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- search box -->
+					<div class="search-box">
+						<form action="/search" method="get">
+							<div class="line">
+								<input name="q" type="text" value="Поиск сервиса">
+								<button type="submit">ok</button>
+							</div>
+						</form>
+					</div>
+					<!-- search link for ipad -->
+					<a class="search-link" href="/search"></a>
+					<!-- user pic -->
+					<a class="userpic" href="/cabinet"><img alt="" height="40" src="images/user-pic.png" width="40"></a>
+					<div class="cf"></div>
+				</div>
+			</header>
+			<section class="main">
+				<div class="container">
+					<!-- page title -->
+					<h1 class="page-title">
+						Настройки пользователя
+						<span>(4 человека)</span>
+					</h1>
+					<div class="columns">
+						<!-- main user column -->
+						<div class="column-main-user">
+							<div class="user-block">
+								<div class="photo">
+									<img alt="" height="160" src="images/user-photo-1.jpg" width="160">
+									<div class="overlay">Текущий абонент</div>
+								</div>
+								<div class="details">
+									<div class="info-block">
+										<div class="name">Алексей<span>Барсуков</div>
+										<div class="phone-number">+7 (927) 666-70-01</div>
+										<div class="access-level">
+											Уровень доступа:
+											<span>управление счетом</span>
+										</div>
+									</div>
+									<div class="controls">
+										<a href="#">Редактировать данные</a>
+									</div>
+									<form action="request.json" method="get">
+										<div class="line">
+											<input name="user[name]" type="text">
+										</div>
+										<div class="line">
+											<input name="user[email]" type="email">
+										</div>
+										<div class="checkbox">
+											<input id="user_notifications" name="user[notifications]" type="checkbox" value="1">
+											<label for="user_notifications">Присылать оповещения</label>
+										</div>
+										<div class="actions">
+											<a class="cancel" href="#">Отменить</a>
+											<a class="update" href="#">Сохранить</a>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<!-- additional users column -->
+						<div class="column-additional-users">
+							<div class="user-block">
+								<div class="photo">
+									<img alt="" height="160" src="images/user-photo-2.jpg" width="160">
+									<a class="edit" href="#">
+										<em>Загрузить фотографию</em>
+									</a>
+								</div>
+								<div class="details">
+									<div class="info-block">
+										<div class="name">Александр<span>Братенков</div>
+										<div class="phone-number">+7 (927) 666-70-01</div>
+										<div class="access-level">
+											Уровень доступа:
+											<span>просмотр данных</span>
+										</div>
+									</div>
+									<div class="controls">
+										<a href="#">Редактировать данные</a>
+									</div>
+									<form action="request.json" method="get">
+										<div class="line">
+											<input name="user[name]" type="text">
+										</div>
+										<div class="line">
+											<div class="select-box">
+												<select name="user[access]">
+													<option value="">Уровень доступа</option>
+													<option value="1">Просмотр данных</option>
+													<option value="2">Управление счетом</option>
+												</select>
+											</div>
+										</div>
+										<div class="checkbox">
+											<span>Лимит расходов абонента</span>
+										</div>
+										<div class="line-select">
+											<input name="user[amount]" type="text">
+											<div class="select-box">
+												<select name="user[period]">
+													<option value="4">За год</option>
+												</select>
+											</div>
+										</div>
+										<div class="actions">
+											<a class="update" href="#">Сохранить</a>
+											<a class="cancel" href="#">Отменить</a>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="user-block">
+								<div class="photo">
+									<img alt="" height="160" src="images/user-photo-3.jpg" width="160">
+									<a class="edit" href="#">
+										<em>Загрузить фотографию</em>
+									</a>
+								</div>
+								<div class="details">
+									<div class="info-block">
+										<div class="name">Ярослав<span>Камендровский</div>
+										<div class="phone-number">+7 (927) 666-70-01</div>
+										<div class="access-level">
+											Уровень доступа:
+											<span>управление счетом</span>
+										</div>
+									</div>
+									<div class="controls">
+										<a href="#">Редактировать данные</a>
+									</div>
+									<form action="request.json" method="get">
+										<div class="line">
+											<input name="user[name]" type="text">
+										</div>
+										<div class="line">
+											<div class="select-box">
+												<select name="user[access]">
+													<option value="">Уровень доступа</option>
+													<option value="1">Просмотр данных</option>
+													<option value="2">Управление счетом</option>
+												</select>
+											</div>
+										</div>
+										<div class="checkbox">
+											<span>Лимит расходов абонента</span>
+										</div>
+										<div class="line-select">
+											<input name="user[amount]" type="text">
+											<div class="select-box">
+												<select name="user[period]">
+													<option value="4">За год</option>
+												</select>
+											</div>
+										</div>
+										<div class="actions">
+											<a class="update" href="#">Сохранить</a>
+											<a class="cancel" href="#">Отменить</a>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="user-block">
+								<div class="photo">
+									<img alt="" height="160" src="images/user-photo-4.jpg" width="160">
+									<a class="edit" href="#">
+										<em>Загрузить фотографию</em>
+									</a>
+								</div>
+								<div class="details">
+									<div class="info-block">
+										<div class="name">Мария<span>Барсукова</div>
+										<div class="phone-number">+7 (927) 666-70-01</div>
+										<div class="access-level">
+											Уровень доступа:
+											<span>просмотр данных</span>
+										</div>
+									</div>
+									<div class="controls">
+										<a href="#">Редактировать данные</a>
+									</div>
+									<form action="request.json" method="get">
+										<div class="line">
+											<input name="user[name]" type="text">
+										</div>
+										<div class="line">
+											<div class="select-box">
+												<select name="user[access]">
+													<option value="">Уровень доступа</option>
+													<option value="1">Просмотр данных</option>
+													<option value="2">Управление счетом</option>
+												</select>
+											</div>
+										</div>
+										<div class="checkbox">
+											<span>Лимит расходов абонента</span>
+										</div>
+										<div class="line-select">
+											<input name="user[amount]" type="text">
+											<div class="select-box">
+												<select name="user[period]">
+													<option value="4">За год</option>
+												</select>
+											</div>
+										</div>
+										<div class="actions">
+											<a class="update" href="#">Сохранить</a>
+											<a class="cancel" href="#">Отменить</a>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="cf"></div>
+					</div>
+				</div>
+				<!-- push for sticky footer -->
+				<div class="push-footer"></div>
+			</section>
+		</div>
+		<!-- footer -->
+		<footer>
+			<div class="container">
+				<a class="home" href="http://megafon.ru/">Мегафон</a>
+				<div class="copys">© 2012 ОАО «МегаФон»</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="#">Корпоративный сайт</a>
+						</li>
+						<li>
+							<a href="#">Условия оказания услуг</a>
+						</li>
+						<li>
+							<a href="#">Лицензии</a>
+						</li>
+						<li>
+							<a href="#">English</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="legal">
+					Сайт является средством массовой информации.<br>Номер свидетельства: Эл № ФС 77 - 24991. Дата регистрации: 30.06.2006.
+				</div>
+				<div class="phone">8 800 333-05-00</div>
+				<div class="social">
+					<ul>
+						<li>
+							<a class="youtube" href="#"></a>
+						</li>
+						<li>
+							<a class="vkontakte" href="#"></a>
+						</li>
+						<li>
+							<a class="facebook" href="#"></a>
+						</li>
+						<li>
+							<a class="twitter" href="#"></a>
+						</li>
+						<li>
+							<a class="livejournal" href="#"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<!-- script at the page bottom -->
+		<script src="javascripts/lib/jquery.min.js"></script>
+		<script src="javascripts/application.js"></script>
+	</body>
+</html>
